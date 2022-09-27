@@ -9,17 +9,14 @@
     grid-auto-rows: auto;
     border: solid white .3rem;
     max-width: 1000px;
-    grid-template-areas: 
-    "header"
-    "box1"
-    "box2"
-    "box3"
-    "box4"
-    "box5"
-    "big"
-    "footer";
-    
-    
+    display: flex;
+    flex-direction: column;
+}
+aside{
+    background-color: white;
+    grid-template-areas: aside;
+    height: 80px;
+
 }
 
 .header{
@@ -66,6 +63,7 @@
 
 @media screen and (min-width: 768px) {
     .wrapper{
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
         " header header header header"
