@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1400px;
+    max-height: 1000px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.box1, .box2, .box3, .box4{
+    width: 20rem;
+    height: 10rem;
+    margin: 1rem;
+    background-color: purple;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin: 5px 5px;
+    display: flex;
+    
+
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+
+div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: main;
+}
+.main_box1, .main_box2, .main_box3{
+    width: 40.5rem;
+    height: 15rem;
+    background-color: pink;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px;
+    display: flex;
+    
+
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    grid-area: footer;
+}
+
+.footer{
+    width: 40.5rem;
+    height: 15rem;
+    margin: 1rem;
+    background-color: burlywood;
+
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "box1 box2 box3 box4"
+        ". main_box1 main_box2 main_box3"
+        ". main_box1 main_box2 main_box3"
+        "footer foooter footer footer";
+        display: flex;
+        
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .main_box1, .main_box2, .main_box3{
+        width: 30%;
+        height: 40.5rem;
+        
+    }
+    .footer{
+        width: 93%;
+        margin: 0;
+    }
+
+
+    
+}
