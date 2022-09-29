@@ -124,7 +124,7 @@ footer{
     }
     .top{
         flex-direction: row;
-        
+        gap: 10px;
     }
     .top_box1, .top_box2, .top_box3{
         width: 100%;
@@ -137,6 +137,7 @@ footer{
         align-content: center;
         gap: 5px;
         margin: 0;
+        width: 90%;
 
     }
 
@@ -147,13 +148,11 @@ footer{
     }
     .side{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-
     }
 
     .side_box1,.side_box2,.side_box3{
+        margin: 5px 0 0 -60px;
+
         
     }
     
